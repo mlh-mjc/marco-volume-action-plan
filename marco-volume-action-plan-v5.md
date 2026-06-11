@@ -16,7 +16,7 @@ Per state, in order: **0** create two fresh numbers **+ register them for trust*
 ---
 
 ## Trust registration: REQUIRED for every number you create in Step 0
-*(Verified live in your Twilio Trust Hub on 2026-06-11. A bare new Twilio number dials as unbranded VoIP and gets screened. Your Trust Hub is already fully set up and Approved, so a new number just has to be added to it.)*
+*(Verified live in your Twilio Trust Hub on 2026-06-11. Your existing numbers are already branded and Approved, so the screening they get is from being over-dialed and shared, not from lacking a brand. But a brand-new number you buy starts unregistered, so it must be added to the Trust Hub below, otherwise it dials with no brand at all.)*
 
 What already exists and is **Approved** (don't recreate these):
 - **Business Profile "Visiqua"**, the parent for everything below.
@@ -168,6 +168,9 @@ curl -u '<SK_KEY>:<SECRET>' -X POST "https://api.twilio.com/2010-04-01/Accounts/
 7. Done, the number now shows in the **AI Agent DID** dropdown on every agent edit page.
 
 ## R1. Numbers ranked by burn (full)
+
+> [!IMPORTANT]
+> **Why these voicemail rates are high (not what you might assume):** these numbers are **already branded** (Branded Calling Approved). The screening is not a branding gap. Each number is **shared across 5-6 agents and over-dialed** (1,600+ dials/month on one line), which burns its carrier reputation even with a brand attached, and VoIP numbers get sent to voicemail regardless of the name shown. The fix is **fresh, un-shared numbers spread across more lines**, not more branding.
 
 | Caller-ID number | Dials/30d | Voicemail % | Agents sharing |
 | :--- | :-- | :-- | :-- |
